@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/lbtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="LOC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        map:icon="@android:drawable/ic_menu_mylocation"
+        map:rippleColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/ranb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="10dp"
+        android:text="DB" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="10dp"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/loadMarks"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="10dp"
+        android:text="Load DB" />
+
+
+</RelativeLayout>
